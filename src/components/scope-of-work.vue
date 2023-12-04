@@ -1,5 +1,7 @@
 <template>
-    <div class="scope pt-[60px] pb-[100px] px-[5%]">
+    <div class="section pb-[100px] backgroundImg
+    bg-white
+    pt-15">
         <div class="container">
             <h2>
                 Apps, websites, logos & more.
@@ -8,7 +10,7 @@
             text-left text-[17px] font-[700]
             mt-[100px] p-[50px]
             relative
-            border-[6px] border-[#fbe8de]"
+            border-[6px] border-beige"
             >
                 <div class="
                 grid grid-cols-3 gap-x-[30px]">
@@ -66,7 +68,7 @@
                     </div>
                     <div>
                         <div class="scopes">
-                            Tade show banners
+                            Trade show banners
                         </div>
                         <div class="scopes">
                             Email graphics
@@ -100,11 +102,6 @@
 </template>
 
 <style>
-.scope {
-    background-image: url("../assets/designjoy_background_home.png");
-    background-color: #fff;
-}
-
 .scopes {
     border-bottom: 6px solid #fbe8de;
     margin-bottom: 30px;

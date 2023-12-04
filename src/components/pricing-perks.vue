@@ -1,9 +1,14 @@
 <template>
-    <div class="perks p-[32px]">
-        <div class="text-left border-b-[1px] border-black pb-[40px]">
-            <img src="../assets/designjoy_pricing_call.svg"
-            class="mb-[20px] mx-auto">
-            <p class="perksTitle">
+    <div class="backgroundImg
+    bg-white
+    p-8">
+        <div class="
+        text-left
+        border-b-[1px] border-black
+        pb-10">
+            <img src="../assets/pricing/designjoy_pricing_call.svg"
+            class="mb-5 mx-auto">
+            <p class="perksTitle font-grifter leading-6">
                 Book a call
             </p>
             <p class="perksDesc">
@@ -13,10 +18,10 @@
                 Book a call
             </p>
         </div>
-        <div class="text-left py-[40px]">
-            <img src="../assets/designjoy_pricing_refer.svg"
-            class="mb-[20px] mx-auto">
-            <p class="perksTitle">
+        <div class="text-left py-10">
+            <img src="../assets/pricing/designjoy_pricing_refer.svg"
+            class="mb-5 mx-auto">
+            <p class="perksTitle font-grifter leading-6">
                 Refer a friend & earn
             </p>
             <p class="perksDesc">
@@ -30,16 +35,9 @@
 </template>
 
 <style>
-.perks {
-    background-image: url("../assets/designjoy_background_home.png");
-    background-color: #fff;
-}
-
 .perksTitle {
     letter-spacing: 0.5px;
-    font-family: "Grifter", sans-serif;
     font-size: 20px;
-    line-height: 24px;
 }
 
 .perksDesc {

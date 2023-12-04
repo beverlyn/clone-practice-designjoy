@@ -1,65 +1,70 @@
 <template>
-    <div class="better pt-[60px] pb-[100px] bg-[#e1eaf4]">
-        <div class="max-w-[1240px] text-center m-auto">
+    <div class="section pb-[100px] backgroundImg
+    pt-15 
+    bg-bluegray">
+        <div class="container">
             <div class="max-w-[800px] mx-auto"> 
-                <h2>
-                    It’s “you’ll never go back” better
+                <h2 class="max-w-[600px] mx-auto">
+                    It’s “you’ll 
+                    <span class="never">never</span> 
+                    go back” better
                 </h2>
-                <h3 class="max-w-[700px]">
+                <h3 class="max-w-[700px] mx-auto">
                     Designjoy replaces unreliable freelancers and expensive agencies for one flat monthly fee, with designs delivered so fast that it will blow your mind.
                 </h3>
             </div>
             <div class="
             mt-[100px]
-            grid grid-cols-2 gap-[60px]"
+            grid grid-cols-2 gap-15"
             >
-                <div class="quote kevin
+                <div class="quote backgroundImg
+                bg-white
                 text-left tracking-[0.5px] 
                 flex flex-col justify-center items-start
-                py-[30px] px-[40px]"
+                py-[30px] px-10"
                 >
-                    <img src="../assets/quote_mark.svg" 
+                    <img src="../assets/designjoy_quote_mark.svg" 
                     class="mb-[30px]">
                     Design is everything, and these guys have nailed it.
                     <div class="
-                    mt-[20px] 
+                    mt-5 
                     flex items-center"
                     >
-                        <div class="kevin_pic
-                        w-[40px] h-[40px] 
+                        <div class="kevinPic
+                        w-10 h-10
                         bg-black bg-[90%] bg-cover 
                         rounded-[50%]
-                        mr-[12px]"
+                        mr-3"
                         ></div>
-                        <div class="kevin_name
-                        text-[17px] leading-[24px]">
+                        <div class="
+                        text-[17px] leading-6">
                             Kevin O'Leary, 
                             <span class="font-bold">🦈 Shark Tank </span>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <div class="advantages mb-[40px]">
-                        <div class="advantages_header">
+                <div class="pr-10">
+                    <div class="advantages mb-10">
+                        <div class="advantagesHeader font-grifter">
                             Totally async
                         </div>
-                        <div class="advantages_desc">
+                        <div class="advantagesDesc">
                             Don't like meetings? We don't either; so much so that we've outlawed them completely.
                         </div>
                     </div>
-                    <div class="advantages mb-[40px]">
-                        <div class="advantages_header">
+                    <div class="advantages mb-10">
+                        <div class="advantagesHeader font-grifter">
                             Manage with Trello
                         </div>
-                        <div class="advantages_desc">
+                        <div class="advantagesDesc">
                             Manage your design board using Trello. View active, queued and completed tasks with ease.
                         </div>
                     </div>
                     <div class="advantages mb-0">
-                        <div class="advantages_header">
+                        <div class="advantagesHeader font-grifter">
                             Invite unlimited team members
                         </div>
-                        <div class="advantages_desc">
+                        <div class="advantagesDesc">
                             Invite your entire team, so anyone can submit requests and track their progress.
                         </div>
                     </div>
@@ -71,21 +76,18 @@
 </template>
 
 <style>
-.better {
-    background-image: url("../assets/designjoy_background_home.png");
-    background-position: 0 0,0 0;
-    padding: 150px 5% 100px;
+.never {
+    background-image: url("../assets/better/designjoy_never_underline.svg");
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
-.kevin {
-    background-image: url("../assets/designjoy_background_home.png"), linear-gradient(#fff, #fff);
+.kevinPic {
+    background-image: url("../assets/better/designjoy_kevin.jpeg");
 }
 
-.kevin_pic {
-    background-image: url("../assets/designjoy_kevin.jpeg");
-}
-
-.kevin_name{
+.kevinName{
     font-family: "PlusJakartaSans", sans-serif;
     font-weight: 400;
 }
@@ -96,13 +98,12 @@
     line-height: 30px;
 }
 
-.advantages_header {
-    font-family: "Grifter", sans-serif;
+.advantagesHeader {
     letter-spacing: 0.5px;
     margin-bottom: 10px;
 }
 
-.advantages_desc {
+.advantagesDesc {
     font-family: "PlusJakartaSans", sans-serif;
     max-width: 490px;
     font-size: 17px;

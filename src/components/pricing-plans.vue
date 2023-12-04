@@ -3,16 +3,17 @@ import buttonPlans from './button-plans.vue';
 </script>
 
 <template>
-    <div class="plans
+    <div class="backgroundImg
+    bg-white
     min-h-[450px]
     text-left 
     flex flex-col justify-between 
     relative
-    pt-[60px] px-[30px] pb-[30px]"
+    pt-15 px-[30px] pb-[30px]"
     >
         <div>
-            <p class="priceFont
-            tracking-[0.5px] text-[24px] leading-[30px]"
+            <p class="
+            font-grifter tracking-[0.5px] text-[24px] leading-[30px]"
             >
                 <slot name="priceHeader"></slot>
             </p>
@@ -22,15 +23,20 @@ import buttonPlans from './button-plans.vue';
             </p>
         </div>
         <div class="text-center">
-            <p class="priceFont text-left tracking-[0.5px] mt-[30px] text-[30px] leading-[42px]"
+            <p class="
+            font-grifter text-left tracking-[0.5px] text-[30px] leading-[42px]
+            mt-[30px]"
             >$<slot name="amount"></slot>/m</p>
-            <p class="text-[12px] text-left mt-0 opacity-50">
+            <p class="
+            text-[12px] text-left
+            mt-0
+            opacity-50">
                 Pause or cancel anytime
             </p>
-            <buttonPlans class="w-[100%]">
+            <buttonPlans class="w-full">
                 <template v-slot:buttonName>Get started</template>
             </buttonPlans>
-            <div class="mt-[24px]">
+            <div class="mt-6">
                 <a class="
                 text-[14px]
                 font-[700] text-center
@@ -44,14 +50,3 @@ import buttonPlans from './button-plans.vue';
         <slot name="popular"></slot>
     </div>
 </template>
-
-<style>
-.plans {
-    background-image: url("../assets/designjoy_background_home.png");
-    background-color: #fff;
-}
-
-.priceFont {
-    font-family: "Grifter", sans-serif;
-}
-</style>

@@ -5,8 +5,9 @@ import pricingPerks from './pricing-perks.vue';
 </script>
 
 <template>
-    <div class="pricing
-    pt-[60px] py-[5%] pb-[100px]">
+    <div class="section pb-[100px] backgroundImg
+    bg-beige
+    pt-15">
         <div class="container">
             <h2>
                 Membership levels
@@ -14,11 +15,13 @@ import pricingPerks from './pricing-perks.vue';
             <h3>
                 Choose a plan that's right for you.
             </h3>
-            <img src="../assets/designjoy_pricing_image.svg"
-            class="mt-[60px] mx-auto"
+            <img src="../assets/pricing/designjoy_pricing_image.svg"
+            class="mt-15 mx-auto"
             >
 
-            <div class="grid grid-cols-3 gap-[2px] mt-[60px]">
+            <div class="
+            grid grid-cols-3 gap-[2px] 
+            mt-15">
                 <div>
                     <pricingPlans>
                         <template v-slot:priceHeader>Standard</template>
@@ -27,8 +30,9 @@ import pricingPerks from './pricing-perks.vue';
                         <template v-slot:popular>
                             <div class="
                                 absolute
-                                top-[-3%] bottom-auto right-auto left-[9%] rotate-[-9deg]
-                                text-white tracking-[1px] text-[10px] font-[700] leading-[20px]
+                                top-[-3%] bottom-auto right-auto left-[9%] 
+                                rotate-[-9deg]
+                                text-white tracking-[1px] text-[10px] font-[700] leading-5
                                 bg-[#ea552b]
                                 rounded-[5px]
                                 flex justify-center items-center
@@ -36,8 +40,10 @@ import pricingPerks from './pricing-perks.vue';
                                 ">
                                     MOST POPULAR
                             </div>
-                            <img src="../assets/designjoy_pricing_mostpop.svg"
-                            class="w-[20px] absolute top-[-10%] left-[22%]">
+                            <img src="../assets/pricing/designjoy_pricing_mostpop.svg"
+                            class="
+                            w-5 
+                            absolute top-[-10%] left-[22%]">
                         </template>
                     </pricingPlans>
                     <pricingIncluded>
@@ -59,45 +65,32 @@ import pricingPerks from './pricing-perks.vue';
             <div class="
             grid grid-cols-3
             mt-[2px]">
-                <div class="addOn
+                <div class="backgroundImg
+                bg-black
                 row-span-1 col-span-3
                 text-white text-center
                 border-b-[1px]
                 flex flex-col justify-center items-center 
                 p-[50px]">
                     <div class="
-                    text-black text-uppercase tracking-[0.02em] text-[10px] font-[700] leading-[16px]
+                    text-black text-uppercase tracking-[0.02em] text-[10px] font-[700] leading-4
                     bg-[#fdd900]
                     rounded-[32px]
-                    mb-[24px]
+                    mb-6
                     py-[6px] px-[14px]">
                         ADD-ON
                     </div>
-                    <h2 class="mb-[16px] text-[30px] leading-[30px]">
+                    <h2 class="mb-4 text-[30px] leading-[30px]">
                         Webflow development
                     </h2>
                     <p class="mt-[6px] text-[15px] leading-[22px]">
                         Get a better website faster with Webflow development. Requires a design subscription.
                     </p>
-                    <h2 class="mb-[16px] text-[30px] leading-[30px] mt-[24px]">
+                    <h2 class="mb-4 text-[30px] leading-[30px] mt-6">
                         $999/m
                     </h2>
-
                 </div>
-
             </div>
         </div>
     </div>
 </template>
-
-<style>
-.pricing {
-    background-image: url("../assets/designjoy_background_home.png");
-    background-color: #fbe8de;
-}
-
-.addOn {
-    background-image: url("../assets/designjoy_background_home.png");
-    background-color: #000;
-}
-</style>

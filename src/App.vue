@@ -1,6 +1,8 @@
 <script setup>
 import navBar from './components/nav-bar.vue';
-import buttonPlans from './components/button-plans.vue';
+import divider from './components/divider.vue';
+import logoHeader from './components/logo-header.vue';
+import hero from './components/hero.vue';
 import latestProjects from './components/latest-projects.vue';
 import marquee from "./components/marquee.vue";
 import reinvent from './components/reinvent.vue';
@@ -15,59 +17,114 @@ import footerDiv from './components/footer.vue';
 </script>
 
 <template>
-<navBar/>
-<div class="top pt-[200px] pb-[40px] px-[5%]">
-  <div class="text-center m-auto max-w-[1240px]">
-    <div class="max-w-[800px] my-[0px] m-auto">
-      <h1 class="text-[80px] font-extralight leading-[90px]">
-        A design agency with a twist
-      </h1>
-      <p class="slogan mt-[20px] mb-0 text-[24px] leading-[36px]">
-        Design subscriptions for everyone. Pause or cancel anytime.
-      </p>
-      <buttonPlans class="px-[60px]">
-        <template v-slot:buttonName>See plans</template>
-      </buttonPlans>
-      <p class="flex justify-center items-center mt-[30px] text-[13px]">
-        Designs you'll ♥️, guaranteed
-      </p>
-    </div>
-    <img src="./assets/designjoy_home_left_design.svg" class="absolute top-[15%] left-[0%] max-w-[200px]">
-    <img src="./assets/designjoy_home_right_design.svg" class="absolute top-[13%] right-[0%] max-w-[250px]">
-  </div>
-</div>
-
-<div class=" top pt-[60px] pb-[100px] overflow-hidden">
-  <div class="relative max-w-[1240px] m-auto">
-    <img src="./assets/designjoy_latestprojects.svg" class="absolute w-[130px] ml-[5%] top-[-56px] left-[0%]">
-  </div>
-  <latestProjects/>
-</div>
-
+<!-- <navBar/> -->
+<logoHeader id="top"/>
+<hero/>
+<latestProjects/>
 <marquee/>
 <reinvent/>
+<divider>
+  <template v-slot:upperHalf>
+    <div class="backgroundImg dividerHalf bg-white"></div>
+  </template>
+  <template v-slot:lowerHalf>
+    <div class="backgroundImg dividerHalf bg-bluegray"></div>
+  </template>
+  <template v-slot:middle>
+    <img src="./assets/divider/designjoy_divider_curvedline.svg">
+  </template>
+  <template v-slot:left>
+    <img src="./assets/divider/designjoy_divider_yellow.svg" class="dividerImgLeft w-[180px] top-[-68%]">
+  </template>
+  <template v-slot:right>
+    <img src="./assets/divider/designjoy_divider_orange.svg" class="dividerImgRight w-[230px] top-[-110%]">
+  </template>
+</divider>
 <better/>
+<divider>
+  <template v-slot:upperHalf>
+    <div class="backgroundImg dividerHalf bg-bluegray"></div>
+  </template>
+  <template v-slot:lowerHalf>
+    <div class="backgroundImg dividerHalf bg-white"></div>
+  </template>
+  <template v-slot:middle>
+    <img src="./assets/divider/designjoy_divider_line.svg">
+  </template>
+  <template v-slot:left>
+    <img src="./assets/divider/designjoy_divider_rainbow.svg" class="dividerImgLeft w-[190px] top-[-89%]">
+  </template>
+</divider>
 <benefits/>
+<divider>
+  <template v-slot:upperHalf>
+    <div class="backgroundImg dividerHalf bg-white"></div>
+  </template>
+  <template v-slot:lowerHalf>
+    <div class="backgroundImg dividerHalf bg-bluegray"></div>
+  </template>
+  <template v-slot:middle>
+    <img src="./assets/divider/designjoy_divider_curvedline.svg">
+  </template>
+  <template v-slot:right>
+    <img src="./assets/divider/designjoy_divider_cocentric.svg" class="dividerImgRight w-[150px] top-0">
+  </template>
+</divider>
 <recentWork/>
+<divider>
+  <template v-slot:upperHalf>
+    <div class="backgroundImg dividerHalf bg-bluegray"></div>
+  </template>
+  <template v-slot:lowerHalf>
+    <div class="backgroundImg dividerHalf bg-white"></div>
+  </template>
+  <template v-slot:middle>
+    <img src="./assets/divider/designjoy_divider_line.svg">
+  </template>
+</divider>
 <funkyScribbles/>
 <scopeOfWork/>
+<divider>
+  <template v-slot:upperHalf>
+    <div class="backgroundImg dividerHalf bg-white"></div>
+  </template>
+  <template v-slot:lowerHalf>
+    <div class="backgroundImg dividerHalf bg-beige"></div>
+  </template>
+  <template v-slot:left>
+    <img src="./assets/divider/designjoy_divider_yellowteal.svg" class="dividerImgLeft bottom-[-84%]">
+  </template>
+  <template v-slot:middle>
+    <img src="./assets/divider/designjoy_divider_wavy.svg">
+  </template>
+  <template v-slot:right>
+    <img src="./assets/divider/designjoy_divider_tealblack.svg" class="dividerImgRight top-0">
+  </template>
+</divider>
 <pricing/>
+<divider>
+  <template v-slot:upperHalf>
+    <div class="backgroundImg dividerHalf bg-beige"></div>
+  </template>
+  <template v-slot:lowerHalf>
+    <div class="backgroundImg dividerHalf bg-white"></div>
+  </template>
+  <template v-slot:left>
+    <img src="./assets/divider/designjoy_divider_pink.svg" class="dividerImgLeft pink w-[240px] bottom-[-84%]">
+  </template>
+  <template v-slot:middle>
+    <img src="./assets/divider/designjoy_divider_wavy.svg">
+  </template>
+  <template v-slot:right>
+    <img src="./assets/divider/designjoy_divider_blue.svg" class="dividerImgRight top-0">
+  </template>
+</divider>
 <FAQ/>
 <footerDiv/>
 </template>
 
 <style>
-.top {
-  background-image: url("./assets/designjoy_background_home.png");
-  background-color: #fbe8de;
-}
-
-h1 {
-  font-family: 'Grifter', sans-serif;
-}
-
-.slogan {
-  font-family: "PlusJakartaSans", sans-serif;
+.pink {
+  left: -8%;
 }
 </style>
-

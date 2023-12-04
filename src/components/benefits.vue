@@ -3,10 +3,10 @@ import buttonPlans from './button-plans.vue';
 </script>
 
 <template>
-    <div class="benefits px-[5%] pt-60px">
+    <div class="section pb-[100px] backgroundImg pt-15">
         <div class="container"> 
             <div class="max-w-[800px] mx-auto">
-                <img src="../assets/designjoy_benefits.svg"
+                <img src="../assets/benefits/designjoy_benefits.svg"
                 class="mb-[30px] mx-auto"
                 >
                 <h2>Membership benefits</h2>
@@ -21,87 +21,63 @@ import buttonPlans from './button-plans.vue';
                 </buttonPlans>
             </div>
             <div class="
-            mt-[60px] 
-            grid grid-cols-3 gap-[60px]"
+            mt-15 
+            grid grid-cols-3 gap-15"
             >
-                <div class="
-                mb-[40px]
-                text-[20px] leading-[30px]"
-                >
+                <div class="benefits">
                     <div class="benefitsIcon">
                     </div>
-                    <p class="benefitsHeader"
-                    >
+                    <p class="benefitsHeader font-grifter">
                         Design board
                     </p>
                     <p class="benefitsDesc">
                         Add as many design requests to your board as you'd like.
                     </p>
                 </div>
-                <div class="
-                mb-[40px]
-                text-[20px] leading-[30px]"
-                >
+                <div class="benefits">
                     <div class="benefitsIcon">
                     </div>
-                    <p class="benefitsHeader"
-                    >
+                    <p class="benefitsHeader font-grifter">
                         Lightning fast delivery
                     </p>
                     <p class="benefitsDesc">
                         Get your design one at a time in just a few days on average.
                     </p>
                 </div>
-                <div class="
-                mb-[40px]
-                text-[20px] leading-[30px]"
-                >
+                <div class="benefits">
                     <div class="benefitsIcon">
                     </div>
-                    <p class="benefitsHeader"
-                    >
+                    <p class="benefitsHeader font-grifter">
                         Fixed monthly rate
                     </p>
                     <p class="benefitsDesc">
                         No surprises here! Pay the same fixed price each month.
                     </p>
                 </div>
-                <div class="
-                mb-[40px]
-                text-[20px] leading-[30px]"
-                >
+                <div class="benefits">
                     <div class="benefitsIcon">
                     </div>
-                    <p class="benefitsHeader"
-                    >
+                    <p class="benefitsHeader font-grifter">
                         Top-notch quality
                     </p>
                     <p class="benefitsDesc">
                         Insane design quality at your fingertips whenever you need it.
                     </p>
                 </div>
-                <div class="
-                mb-[40px]
-                text-[20px] leading-[30px]"
-                >
+                <div class="benefits">
                     <div class="benefitsIcon">
                     </div>
-                    <p class="benefitsHeader"
-                    >
+                    <p class="benefitsHeader font-grifter">
                         Flexible and scalable
                     </p>
                     <p class="benefitsDesc">
                         Scale up or down as needed, and pause or cancel at anytime.
                     </p>
                 </div>
-                <div class="
-                mb-[40px]
-                text-[20px] leading-[30px]"
-                >
+                <div class="benefits">
                     <div class="benefitsIcon">
                     </div>
-                    <p class="benefitsHeader"
-                    >
+                    <p class="benefitsHeader font-grifter">
                         Unique and all yours
                     </p>
                     <p class="benefitsDesc">
@@ -116,10 +92,10 @@ import buttonPlans from './button-plans.vue';
 
 <style>
 .benefits {
-    background-image: url("../assets/designjoy_background_home.png");
-    background-color: #fff;
+    margin-bottom: 40px;
+    font-size: 20px;
+    line-height: 30px;
 }
-
 .benefitsIcon {
     width: 100px;
     height: 100px;
@@ -129,7 +105,6 @@ import buttonPlans from './button-plans.vue';
 }
 
 .benefitsHeader {
-    font-family: "Grifter", sans-serif;
     letter-spacing: 0.5px;
     margin-bottom: 10px;
 }
