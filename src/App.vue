@@ -17,7 +17,7 @@ import footerDiv from './components/footer.vue';
 </script>
 
 <template>
-<!-- <navBar/> -->
+<navBar/>
 <logoHeader id="top"/>
 <hero/>
 <latestProjects/>
@@ -55,7 +55,7 @@ import footerDiv from './components/footer.vue';
     <img src="./assets/divider/designjoy_divider_rainbow.svg" class="dividerImgLeft w-[190px] top-[-89%]">
   </template>
 </divider>
-<benefits/>
+<benefits id="benefits"/>
 <divider>
   <template v-slot:upperHalf>
     <div class="backgroundImg dividerHalf bg-white"></div>
@@ -70,7 +70,7 @@ import footerDiv from './components/footer.vue';
     <img src="./assets/divider/designjoy_divider_cocentric.svg" class="dividerImgRight w-[150px] top-0">
   </template>
 </divider>
-<recentWork/>
+<recentWork id="recentWork"/>
 <divider>
   <template v-slot:upperHalf>
     <div class="backgroundImg dividerHalf bg-bluegray"></div>
@@ -83,7 +83,7 @@ import footerDiv from './components/footer.vue';
   </template>
 </divider>
 <funkyScribbles/>
-<scopeOfWork/>
+<scopeOfWork id="scope"/>
 <divider>
   <template v-slot:upperHalf>
     <div class="backgroundImg dividerHalf bg-white"></div>
@@ -101,7 +101,7 @@ import footerDiv from './components/footer.vue';
     <img src="./assets/divider/designjoy_divider_tealblack.svg" class="dividerImgRight top-0">
   </template>
 </divider>
-<pricing/>
+<pricing id="pricing"/>
 <divider>
   <template v-slot:upperHalf>
     <div class="backgroundImg dividerHalf bg-beige"></div>
@@ -119,7 +119,7 @@ import footerDiv from './components/footer.vue';
     <img src="./assets/divider/designjoy_divider_blue.svg" class="dividerImgRight top-0">
   </template>
 </divider>
-<FAQ/>
+<FAQ id="faqs"/>
 <footerDiv/>
 </template>
 
