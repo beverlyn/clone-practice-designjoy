@@ -3,18 +3,21 @@ import marqueeItems from './marquee-items.vue';
 </script>
 
 <template>
-    <div class="
+	<div
+		class="
     bg-black
     py-10
     overflow-hidden"
-    >
-        <div class="marquee 
-        flex 
-        w-[200%]">
-            <marqueeItems/>
-            <marqueeItems/>
-        </div>
-    </div>
+	>
+		<div
+			class="marquee
+        flex
+        w-[200%]"
+		>
+			<marqueeItems />
+			<marqueeItems />
+		</div>
+	</div>
 </template>
 
 <style>

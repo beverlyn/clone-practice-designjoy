@@ -1,14 +1,15 @@
 <template>
-    <button class="
-    mt-10 
-    inline-block 
-    py-6 
-    bg-black 
+	<button
+		class="
+    mt-10
+    inline-block
+    py-6
+    bg-black
     font-grifter text-white text-center text-[17px] tracking-[0.5px]
     rounded-[8px] shadow-[6px]"
-    >
-        <slot name="buttonName"></slot>
-    </button>
+	>
+		<slot name="buttonName" />
+	</button>
 </template>
 
 <style>

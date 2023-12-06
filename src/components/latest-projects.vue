@@ -1,27 +1,44 @@
 <template>
-    <div class="backgroundImg 
+	<div
+		class="backgroundImg
     pt-15 pb-[100px]
     bg-beige
-    overflow-clip">
-        <div class="container">
-            <img 
-            src="../assets/latestprojects/designjoy_latestprojects.svg" 
-            class="
+    overflow-clip"
+	>
+		<div class="container">
+			<img
+				src="../assets/latestprojects/designjoy_latestprojects.svg"
+				class="
             badge
             z-[6]
             absolute top-[-56px] left-0
-            w-[130px] 
+            w-[130px]
             ml-[5%]"
-            >
-        </div>
-        <div class="showcase flex min-w-[110%] justify-between m-auto">
-            <img src="../assets/latestprojects/designjoy_latestprojs_1.jpg" class="latestprojs">
-            <img src="../assets/latestprojects/designjoy_latestprojs_2.jpg" class="latestprojs">
-            <img src="../assets/latestprojects/designjoy_latestprojs_3.jpg" class="latestprojs">
-            <img src="../assets/latestprojects/designjoy_latestprojs_4.jpg" class="latestprojs">
-            <img src="../assets/latestprojects/designjoy_latestprojs_5.jpg" class="latestprojs">
-        </div>
-    </div>
+			>
+		</div>
+		<div class="showcase flex min-w-[110%] justify-between m-auto">
+			<img
+				src="../assets/latestprojects/designjoy_latestprojs_1.jpg"
+				class="latestprojs"
+			>
+			<img
+				src="../assets/latestprojects/designjoy_latestprojs_2.jpg"
+				class="latestprojs"
+			>
+			<img
+				src="../assets/latestprojects/designjoy_latestprojs_3.jpg"
+				class="latestprojs"
+			>
+			<img
+				src="../assets/latestprojects/designjoy_latestprojs_4.jpg"
+				class="latestprojs"
+			>
+			<img
+				src="../assets/latestprojects/designjoy_latestprojs_5.jpg"
+				class="latestprojs"
+			>
+		</div>
+	</div>
 </template>
 
 <style>
