@@ -1,3 +1,10 @@
+<script setup lang="ts">
+import LottieAnimation from './LottieAnimation.vue';
+import reinvent_subscribe from '../assets/lottie/reinvent_subscribe.json';
+import reinvent_receive from '../assets/lottie/reinvent_receive.json';
+import reinvent_revise from '../assets/lottie/reinvent_revise.json';
+</script>
+
 <template>
 	<div
 		class="section pb-[100px] backgroundImg
@@ -20,19 +27,25 @@
             grid grid-cols-3 gap-15"
 			>
 				<div class="max-w-xs">
-					<div />
+					<div class="lottieAnimate">
+						<LottieAnimation :animationData="reinvent_subscribe" :loop="true" :autoplay="true" />
+					</div>
 					<p class="max-w-[300px]">
 						Subscribe to a plan & request as many designs as you'd like.
 					</p>
 				</div>
 				<div class="max-w-xs">
-					<div />
+					<div class="lottieAnimate p-[10px]">
+						<LottieAnimation :animationData="reinvent_receive" :loop="true" :autoplay="true" />
+					</div>
 					<p class="max-w-[300px]">
 						Receive your design within a few business days on average, Monday to Friday.
 					</p>
 				</div>
 				<div class="max-w-xs">
-					<div />
+					<div class="lottieAnimate p-[6px]">
+						<LottieAnimation :animationData="reinvent_revise" :loop="true" :autoplay="true" />
+					</div>
 					<p class="max-w-[300px]">
 						We'll revise the designs until you're 100% satisfied.
 					</p>
@@ -72,3 +85,17 @@
 		</div>
 	</div>
 </template>
+
+<style>
+.lottieAnimate {
+	width: 100px;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 10px;
+	
+}
+</style>

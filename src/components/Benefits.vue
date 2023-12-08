@@ -1,5 +1,12 @@
 <script setup lang="ts">
 import buttonPlans from './ButtonPlans.vue';
+import LottieAnimation from './LottieAnimation.vue';
+import BenefitsDesign from '../assets/lottie/benefits_design.json';
+import BenefitsDelivery from '../assets/lottie/benefits_delivery.json';
+import BenefitsRate from '../assets/lottie/benefits_rate.json';
+import BenefitsQuality from '../assets/lottie/benefits_quality.json';
+import BenefitsScale from '../assets/lottie/benefits_scale.json';
+import BenefitsUnique from '../assets/lottie/benefits_unique.json';
 </script>
 
 <template>
@@ -30,7 +37,9 @@ import buttonPlans from './ButtonPlans.vue';
             grid grid-cols-3 gap-15"
 			>
 				<div class="benefits">
-					<div class="benefitsIcon" />
+					<div class="benefitsIcon">
+						<LottieAnimation :animationData="BenefitsDesign" :loop="true" :autoplay="true" />
+					</div>
 					<p class="benefitsHeader font-grifter">
 						Design board
 					</p>
@@ -39,7 +48,9 @@ import buttonPlans from './ButtonPlans.vue';
 					</p>
 				</div>
 				<div class="benefits">
-					<div class="benefitsIcon" />
+					<div class="benefitsIcon">
+						<LottieAnimation :animationData="BenefitsDelivery" :loop="true" :autoplay="true" />
+					</div>
 					<p class="benefitsHeader font-grifter">
 						Lightning fast delivery
 					</p>
@@ -48,7 +59,9 @@ import buttonPlans from './ButtonPlans.vue';
 					</p>
 				</div>
 				<div class="benefits">
-					<div class="benefitsIcon" />
+					<div class="benefitsIcon">
+						<LottieAnimation :animationData="BenefitsRate" :loop="true" :autoplay="true" />
+					</div>
 					<p class="benefitsHeader font-grifter">
 						Fixed monthly rate
 					</p>
@@ -57,7 +70,9 @@ import buttonPlans from './ButtonPlans.vue';
 					</p>
 				</div>
 				<div class="benefits">
-					<div class="benefitsIcon" />
+					<div class="benefitsIcon">
+						<LottieAnimation :animationData="BenefitsQuality" :loop="true" :autoplay="true" />
+					</div>
 					<p class="benefitsHeader font-grifter">
 						Top-notch quality
 					</p>
@@ -66,7 +81,9 @@ import buttonPlans from './ButtonPlans.vue';
 					</p>
 				</div>
 				<div class="benefits">
-					<div class="benefitsIcon" />
+					<div class="benefitsIcon">
+						<LottieAnimation :animationData="BenefitsScale" :loop="true" :autoplay="true" />
+					</div>
 					<p class="benefitsHeader font-grifter">
 						Flexible and scalable
 					</p>
@@ -75,7 +92,9 @@ import buttonPlans from './ButtonPlans.vue';
 					</p>
 				</div>
 				<div class="benefits">
-					<div class="benefitsIcon" />
+					<div class="benefitsIcon">
+						<LottieAnimation :animationData="BenefitsUnique" :loop="true" :autoplay="true" />
+					</div>
 					<p class="benefitsHeader font-grifter">
 						Unique and all yours
 					</p>
