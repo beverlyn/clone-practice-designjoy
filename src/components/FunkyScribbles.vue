@@ -1,5 +1,5 @@
 <script setup>
-import buttonPlans from './button-plans.vue';
+import buttonPlans from './ButtonPlans.vue';
 </script>
 
 <template>

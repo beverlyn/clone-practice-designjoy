@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import marqueeItems from './marquee-items.vue';
+import marqueeItems from './MarqueeItems.vue';
 </script>
 
 <template>

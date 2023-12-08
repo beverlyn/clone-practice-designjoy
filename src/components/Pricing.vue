@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import pricingPlans from './pricing-plans.vue';
-import pricingIncluded from './pricing-included.vue';
-import pricingPerks from './pricing-perks.vue';
+import pricingPlans from './PricingPlans.vue';
+import pricingIncluded from './PricingIncluded.vue';
+import pricingPerks from './PricingPerks.vue';
 </script>
 
 <template>
