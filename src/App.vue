@@ -1,19 +1,19 @@
 <script setup>
-import navBar from './components/nav-bar.vue';
-import divider from './components/divider.vue';
-import logoHeader from './components/logo-header.vue';
-import hero from './components/hero.vue';
-import latestProjects from './components/latest-projects.vue';
-import marquee from './components/marquee.vue';
-import reinvent from './components/reinvent.vue';
-import better from './components/better.vue';
-import benefits from './components/benefits.vue';
-import recentWork from './components/recent-work.vue';
-import funkyScribbles from './components/funky-scribbles.vue';
-import scopeOfWork from './components/scope-of-work.vue';
-import pricing from './components/pricing.vue';
-import FAQ from './components/faqs.vue';
-import footerDiv from './components/footer.vue';
+import navBar from './components/NavBar.vue';
+import divider from './components/Divider.vue';
+import logoHeader from './components/LogoHeader.vue';
+import hero from './components/Hero.vue';
+import latestProjects from './components/LatestProjects.vue';
+import marquee from './components/Marquee.vue';
+import reinvent from './components/Reinvent.vue';
+import better from './components/Better.vue';
+import benefits from './components/Benefits.vue';
+import recentWork from './components/RecentWork.vue';
+import funkyScribbles from './components/FunkyScribbles.vue';
+import scopeOfWork from './components/ScopeOfWork.vue';
+import pricing from './components/Pricing.vue';
+import FAQ from './components/Faqs.vue';
+import footerDiv from './components/Footer.vue';
 </script>
 
 <template>
