@@ -4,7 +4,8 @@
     absolute
     flex justify-center
     pt-8
-    mx-auto"
+    mx-auto
+	z-20"
 	>
 		<a class="cursor-pointer">
 			<img

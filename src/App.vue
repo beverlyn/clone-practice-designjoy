@@ -14,10 +14,38 @@ import scopeOfWork from './components/ScopeOfWork.vue';
 import pricing from './components/Pricing.vue';
 import FAQ from './components/Faqs.vue';
 import footerDiv from './components/Footer.vue';
+
+import { ref, onMounted } from 'vue';
+import { useIntersectionObserver } from '@vueuse/core';
+
+const elements = ref([]);
+const setElementRef = el => {
+  if (el) elements.value.push(el);
+};
+
+onMounted(() => {
+  elements.value.forEach(element => {
+    useIntersectionObserver(
+      element,
+      ([{ isIntersecting }], observerElement) => {
+        if (isIntersecting) {
+          // Apply the appropriate animation class based on the element's existing class
+          if (element.classList.contains('leftAni')) element.classList.add('animationFromLeft');
+          if (element.classList.contains('rightAni')) element.classList.add('animationFromRight');
+          if (element.classList.contains('upAni')) element.classList.add('animationFromBelow');
+          if (element.classList.contains('downAni')) element.classList.add('animationFromAbove');
+          // Unobserve after applying animation
+          observerElement.stop();
+        }
+      },
+      { threshold: 0 } // Set your desired threshold
+    );
+  });
+});
 </script>
 
 <template>
-	<navBar />
+	<navBar/>
 	<logoHeader id="top" />
 	<hero />
 	<latestProjects />
@@ -31,18 +59,23 @@ import footerDiv from './components/Footer.vue';
 			<div class="backgroundImg dividerHalf bg-bluegray" />
 		</template>
 		<template #middle>
-			<img src="./assets/divider/designjoy_divider_curvedline.svg">
+			<img src="./assets/divider/designjoy_divider_curvedline.svg"
+			class="downAni"
+			:ref="setElementRef"
+			>
 		</template>
 		<template #left>
 			<img
 				src="./assets/divider/designjoy_divider_yellow.svg"
-				class="dividerImgLeft w-[180px] top-[-68%]"
+				class="dividerImgLeft leftAni w-[180px] top-[-68%] "
+				:ref="setElementRef"
 			>
 		</template>
 		<template #right>
 			<img
 				src="./assets/divider/designjoy_divider_orange.svg"
-				class="dividerImgRight w-[230px] top-[-110%]"
+				class="dividerImgRight rightAni w-[230px] top-[-110%]"
+				:ref="setElementRef"
 			>
 		</template>
 	</divider>
@@ -52,33 +85,39 @@ import footerDiv from './components/Footer.vue';
 			<div class="backgroundImg dividerHalf bg-bluegray" />
 		</template>
 		<template #lowerHalf>
-			<div class="backgroundImg dividerHalf bg-white" />
+			<div class="backgroundImg dividerHalf bg-beige" />
 		</template>
 		<template #middle>
-			<img src="./assets/divider/designjoy_divider_line.svg">
+			<img src="./assets/divider/designjoy_divider_line.svg"
+			class="downAni"
+			:ref="setElementRef">
 		</template>
 		<template #left>
 			<img
 				src="./assets/divider/designjoy_divider_rainbow.svg"
-				class="dividerImgLeft w-[190px] top-[-89%]"
+				class="dividerImgLeft leftAni w-[190px] top-[-89%]"
+				:ref="setElementRef"
 			>
 		</template>
 	</divider>
 	<benefits id="benefits" />
 	<divider>
 		<template #upperHalf>
-			<div class="backgroundImg dividerHalf bg-white" />
+			<div class="backgroundImg dividerHalf bg-beige" />
 		</template>
 		<template #lowerHalf>
 			<div class="backgroundImg dividerHalf bg-bluegray" />
 		</template>
 		<template #middle>
-			<img src="./assets/divider/designjoy_divider_curvedline.svg">
+			<img src="./assets/divider/designjoy_divider_curvedline.svg"
+			class="downAni"
+			:ref="setElementRef">
 		</template>
 		<template #right>
 			<img
 				src="./assets/divider/designjoy_divider_cocentric.svg"
-				class="dividerImgRight w-[150px] top-0"
+				class="dividerImgRight rightAni w-[150px] top-0"
+				:ref="setElementRef"
 			>
 		</template>
 	</divider>
@@ -91,7 +130,9 @@ import footerDiv from './components/Footer.vue';
 			<div class="backgroundImg dividerHalf bg-white" />
 		</template>
 		<template #middle>
-			<img src="./assets/divider/designjoy_divider_line.svg">
+			<img src="./assets/divider/designjoy_divider_line.svg"
+			class="downAni"
+			:ref="setElementRef">
 		</template>
 	</divider>
 	<funkyScribbles />
@@ -106,16 +147,19 @@ import footerDiv from './components/Footer.vue';
 		<template #left>
 			<img
 				src="./assets/divider/designjoy_divider_yellowteal.svg"
-				class="dividerImgLeft bottom-[-84%]"
+				class="dividerImgLeft leftAni bottom-[-84%]"
+				:ref="setElementRef"
 			>
 		</template>
 		<template #middle>
-			<img src="./assets/divider/designjoy_divider_wavy.svg">
+			<img src="./assets/divider/designjoy_divider_wavy.svg"
+			class="downAni">
 		</template>
 		<template #right>
 			<img
 				src="./assets/divider/designjoy_divider_tealblack.svg"
-				class="dividerImgRight top-0"
+				class="dividerImgRight rightAni top-0"
+				:ref="setElementRef"
 			>
 		</template>
 	</divider>
@@ -130,16 +174,20 @@ import footerDiv from './components/Footer.vue';
 		<template #left>
 			<img
 				src="./assets/divider/designjoy_divider_pink.svg"
-				class="dividerImgLeft pink w-[240px] bottom-[-84%]"
+				class="dividerImgLeft leftAni pink w-[240px] bottom-[-84%]"
+				:ref="setElementRef"
 			>
 		</template>
 		<template #middle>
-			<img src="./assets/divider/designjoy_divider_wavy.svg">
+			<img src="./assets/divider/designjoy_divider_wavy.svg"
+			class="downAni"
+			:ref="setElementRef">
 		</template>
 		<template #right>
 			<img
 				src="./assets/divider/designjoy_divider_blue.svg"
-				class="dividerImgRight top-0"
+				class="dividerImgRight rightAni top-0"
+				:ref="setElementRef"
 			>
 		</template>
 	</divider>
@@ -150,5 +198,13 @@ import footerDiv from './components/Footer.vue';
 <style>
 .pink {
   left: -8%;
+}
+
+.demo {
+  max-width: 600px;
+  border: 2px solid #2c3e50;
+  padding: 2rem;
+  margin: 2rem auto;
+  background-color: #42b983;
 }
 </style>

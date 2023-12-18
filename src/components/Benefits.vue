@@ -10,7 +10,7 @@ import BenefitsUnique from '../assets/lottie/benefits_unique.json';
 </script>
 
 <template>
-	<div class="section pb-[100px] backgroundImg pt-15">
+	<div class="section pb-[100px] backgroundImg bg-beige  pt-15">
 		<div class="container">
 			<div class="max-w-[800px] mx-auto">
 				<img
@@ -38,7 +38,7 @@ import BenefitsUnique from '../assets/lottie/benefits_unique.json';
 			>
 				<div class="benefits">
 					<div class="benefitsIcon">
-						<LottieAnimation :animationData="BenefitsDesign" :loop="true" :autoplay="true" />
+						<LottieAnimation :animationData="BenefitsDesign" />
 					</div>
 					<p class="benefitsHeader font-grifter">
 						Design board
@@ -49,7 +49,7 @@ import BenefitsUnique from '../assets/lottie/benefits_unique.json';
 				</div>
 				<div class="benefits">
 					<div class="benefitsIcon">
-						<LottieAnimation :animationData="BenefitsDelivery" :loop="true" :autoplay="true" />
+						<LottieAnimation :animationData="BenefitsDelivery" />
 					</div>
 					<p class="benefitsHeader font-grifter">
 						Lightning fast delivery
@@ -60,7 +60,7 @@ import BenefitsUnique from '../assets/lottie/benefits_unique.json';
 				</div>
 				<div class="benefits">
 					<div class="benefitsIcon">
-						<LottieAnimation :animationData="BenefitsRate" :loop="true" :autoplay="true" />
+						<LottieAnimation :animationData="BenefitsRate" />
 					</div>
 					<p class="benefitsHeader font-grifter">
 						Fixed monthly rate
@@ -71,7 +71,8 @@ import BenefitsUnique from '../assets/lottie/benefits_unique.json';
 				</div>
 				<div class="benefits">
 					<div class="benefitsIcon">
-						<LottieAnimation :animationData="BenefitsQuality" :loop="true" :autoplay="true" />
+						<LottieAnimation 
+						:animationData="BenefitsQuality" />
 					</div>
 					<p class="benefitsHeader font-grifter">
 						Top-notch quality
@@ -82,7 +83,7 @@ import BenefitsUnique from '../assets/lottie/benefits_unique.json';
 				</div>
 				<div class="benefits">
 					<div class="benefitsIcon">
-						<LottieAnimation :animationData="BenefitsScale" :loop="true" :autoplay="true" />
+						<LottieAnimation :animationData="BenefitsScale" />
 					</div>
 					<p class="benefitsHeader font-grifter">
 						Flexible and scalable
@@ -93,7 +94,7 @@ import BenefitsUnique from '../assets/lottie/benefits_unique.json';
 				</div>
 				<div class="benefits">
 					<div class="benefitsIcon">
-						<LottieAnimation :animationData="BenefitsUnique" :loop="true" :autoplay="true" />
+						<LottieAnimation :animationData="BenefitsUnique" />
 					</div>
 					<p class="benefitsHeader font-grifter">
 						Unique and all yours

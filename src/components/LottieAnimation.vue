@@ -5,14 +5,6 @@ import lottie from 'lottie-web';
 // Props
 const props = defineProps({
   animationData: Object,
-  autoplay: {
-    type: Boolean,
-    default: true,
-  },
-  loop: {
-    type: Boolean,
-    default: true,
-  }
 });
 
 // Ref to the container element
@@ -24,8 +16,6 @@ onMounted(() => {
       container: lottieContainer.value, // Direct reference to the DOM element
       animationData: props.animationData,
       renderer: 'svg',
-      loop: props.loop,
-      autoplay: props.autoplay,
     });
   }
 });
