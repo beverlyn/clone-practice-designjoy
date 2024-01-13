@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import accordion from './accordion.vue';
+import accordion from './Accordion.vue';
 </script>
 
 <template>
