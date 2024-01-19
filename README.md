@@ -1,3 +1,6 @@
+> [!NOTE]  
+> This project, intended for educational purposes, contains design elements and assets that are the intellectual property of DesignJoy and is not meant to be used for commerical purposes.
+
 # 🖥️ Clone a website 
 This project is a practice exercise, where I cloned the landing page of an existing, fully operational website from scratch.
 
